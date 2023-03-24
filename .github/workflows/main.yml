@@ -8,3 +8,5 @@ jobs:
           run: npm init -y
         - name: Run eslint
           run: npm i eslint
+        - name: Run code
+          run: node index.js
