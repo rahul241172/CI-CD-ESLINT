@@ -3,11 +3,7 @@ on: push
 jobs:
       eslint:
         runs-on: ubuntu-latest
-        steps:  
-        - name: Checkout code
-          uses: action/checkout@V2
-        - name: Install Node.js
-          uses: action/setup-node@V2
+        steps:
         - name: Install dependencies
           run: npm install
         - name: Run eslint
