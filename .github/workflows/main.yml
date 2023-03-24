@@ -1,0 +1,16 @@
+name: Run ESLINT 
+on: push
+jobs:
+      eslint:
+        runs-on: ubuntu-latest
+        steps:  
+        - name: Checkout code
+          uses: action/checkout@V2
+        - name: Install Node.js
+          uses: action/setup-node@V2
+          with: 
+          node-version: "14.x"
+        - name: Install dependencies
+          run: npm install
+        - name: Run eslint
+          run: npx eslint
