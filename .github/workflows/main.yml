@@ -5,6 +5,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - name: Install dependencies
-          run: npm install
+          run: npm i
         - name: Run eslint
-          run: npx eslint
+          run: npm i eslint
